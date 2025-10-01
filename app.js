@@ -14,19 +14,12 @@ const employees = [
 
 app.use(express.json());
 
-app.get('/employees', (req, res) => {
-  // const { firstName, lastName, age } = req.query;
-  // let results = [...employees];
+app.get('/v1/employees', (req, res) => {
 
-  // if (firstName) {
-  //   results = results.filter((r) => r.firstName === firstName);
-  // }
-  // if (lastName) {
-  //   results = results.filter((r) => r.lastName === lastName);
-  // }
-  // if (age) {
-  //   results = results.filter((r) => +r.age === +age);
-  // }
+  res.json(results);
+});
+
+app.get('/v2/employees', (req, res) => {
 
   res.json(results);
 });
