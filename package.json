@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/henrique-serra/best-practices-rest#readme",
   "dependencies": {
+    "apicache": "^1.6.3",
     "express": "^5.1.0"
   }
 }
